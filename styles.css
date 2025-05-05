@@ -1,0 +1,294 @@
+/* styles.css */
+
+/*--------------------------------------------------------------
+# Custom Properties
+--------------------------------------------------------------*/
+:root {
+    --primary: #007bff;
+    --dark: #000;
+    --light-bg: #f8f9fa;
+    --brand-dark:   #002a5c;      /* deep navy */
+    --brand-primary:#0052cc;      /* core blue */
+    --brand-accent: #0099ff;      /* bright highlight */
+    --light-bg:     #f0f4f8;      /* off-white */
+    --card-radius: 0.75rem;
+    --transition: 0.3s ease;
+    --section-transition: 0.6s ease-out;
+  }
+  
+  /*--------------------------------------------------------------
+  # Global
+  --------------------------------------------------------------*/
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+   /* Headings */
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    /* color: var(--brand-dark); */
+    margin-bottom: 1rem;
+  }
+
+  /*--------------------------------------------------------------
+  # Navbar
+  --------------------------------------------------------------*/
+  .navbar { padding: 0.5rem 1rem; }
+  .navbar-dark .navbar-brand,
+  .navbar-dark .nav-link { color: #fff; font-weight: 500; }
+  .navbar-dark .nav-link:hover { color: var(--primary); }
+  /* .navbar-dark .navbar-toggler-icon {
+    filter: invert(1) brightness(2);
+  } */
+  
+  /* Logo constraints */
+  .navbar-logo {
+    max-height: 50px;
+    max-width: 180px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+  }
+  
+  /*--------------------------------------------------------------
+  # Hero
+  --------------------------------------------------------------*/
+  .full-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-bg { background-color: var(--dark); }
+  .btn-cta {
+    background: var(--primary);
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: transform var(--transition), background var(--transition);
+  }
+  .btn-cta:hover {
+    background: #fff;
+    color: var(--primary);
+    transform: translateY(-3px) scale(1.02);
+  }
+  .small-circle { font-size: 0.5rem; color: var(--primary); vertical-align: middle; }
+  
+  /*--------------------------------------------------------------
+  # Section Headings
+  --------------------------------------------------------------*/
+  h2 {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /*--------------------------------------------------------------
+  # Cards
+  --------------------------------------------------------------*/
+  .card {
+    border-radius: var(--card-radius);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  }
+  
+  /* Feature / Service / Principle Cards */
+  .feature-icon { font-size: 2.5rem; color: var(--primary); }
+  .feature-card,
+  .service-card,
+  .principle-card {
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  /*--------------------------------------------------------------
+  # Footprint Grid
+  --------------------------------------------------------------*/
+  .sap-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .sap-box {
+    background: #fff;
+    border-radius: var(--card-radius);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform var(--transition);
+  }
+  .sap-box img { max-height: 100px; margin-bottom: 0.5rem; }
+  .sap-box figcaption { margin: 0; font-weight: 500; }
+  .sap-box:hover { transform: translateY(-5px); }
+  
+  /*--------------------------------------------------------------
+  # Partners
+  --------------------------------------------------------------*/
+  .partner-card {
+    display: inline-block;
+    background: #fff;
+    padding: 2rem;
+    border-radius: var(--card-radius);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .partner-card img { max-height: 80px; transition: transform var(--transition); }
+  .partner-card img:hover { transform: scale(1.05); }
+  
+  /*--------------------------------------------------------------
+  # Team Photos
+  --------------------------------------------------------------*/
+  .team-photo {
+    width: 200px; height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    display: block;
+    margin: 1rem auto 0;
+  }
+  
+  /*--------------------------------------------------------------
+  # Contact & Footer
+  --------------------------------------------------------------*/
+  #contact .container { text-align: start; }
+  footer { background: var(--dark); color: #fff; }
+  /* Optionally remove AOS-independent reveal CSS since we’re using AOS library */
+/* Hero logo */
+.hero-logo {
+    max-width: 700px; /* adjust to taste */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem; /* centers and spaces below */
+  }
+
+  .poppins-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+/* Set the border color to the desired color */
+.custom-toggler.navbar-toggler {
+    border-color: #ffff;
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.sap-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .sap-box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Responsive tweaks for smaller screens */
+  @media (max-width: 576px) {
+    .sap-box {
+      flex: 1 1 40%; /* shrink and wrap */
+    }
+  
+    .sap-box img {
+      width: 100%;
+      max-width: 120px;
+    }
+  }
+
+    /*--------------------------------------------------------------
+  # Cards (Features / Services / Principles)
+  --------------------------------------------------------------*/
+  .card {
+    border-radius: var(--card-radius);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    background: #fff;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Accent stripe on top */
+  /* .feature-card { */
+  /* .principle-card, */
+  /* .service-card { */
+    /* border-top: 4px solid var(--brand-primary);
+    padding: 1.5rem 1rem;
+  } */
+  
+  .black-stripe{
+    border-top: 4px solid var(--dark);
+  }
+  .feature-icon {
+    font-size: 2.5rem;
+    color: var(--brand-primary);
+    margin-bottom: 1rem;
+  }
+
+  /* About cards accent */
+.about-card {
+  border-top: 4px solid var(--brand-primary);
+}
+
+/* Accordion card headers */
+#services .card-header {
+  background: var(--brand-light, #f8f9fa);
+}
+#services .btn-link {
+  color: var(--brand-dark);
+  font-weight: 600;
+}
+#services .btn-link:hover {
+  text-decoration: none;
+  color: var(--brand-primary);
+}
+
+/* Larger icon headers */
+.service-card .display-4 {
+  font-size: 3rem;
+}
+/* Icon container */
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+/* List styling */
+.service-card ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+/* Card hover lift */
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+  
