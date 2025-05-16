@@ -1,502 +1,805 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Blue Wisdom Inc. – SAP-powered outcomes, deep SAP ecosystem expertise, and an outcome-driven model for ideation, innovation, and impact.">
-    <title>BluWis</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo-left.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BluWis</title>
+  <link rel="icon" type="image/x-icon" href="brain-logo.png" />
 
-    <!-- Google Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-    <!-- Google Font: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Bootstrap CSS + Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- AOS for scroll animations -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #2f75ff, #063ec0)"
+    data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="bluwis-logo.png" alt="BluWis logo" width="202.5" height="45" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fw-semibold">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#principles">Principles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#challenges">Challenges</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top" aria-label="Primary">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#home">
-                <img src="assets/logo-left.jpeg" alt="Blue Wisdom Inc. logo" class="navbar-logo">
-            </a>
-            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <!-- <li class="nav-item"><a class="nav-link" href="#home">Home</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#principles">Principles</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#footprint">SAP Footprint</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#principles">Leadership</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#principles">Principles</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+  <!-- Hero Section -->
+  <header class="hero-image-only-section d-flex align-items-center text-white text-center">
+    <div class="container py-5">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-lg-3 text-lg-end text-md-center text-sm-center hero-img-box">
+          <img src="coding-28.svg" alt="Abstract representation of algorithm execution"
+            class="img-fluid hero-illustration-only mb-4" />
         </div>
-    </nav>
+        <div class="col-lg-5 text-lg-start text-md-center">
+          <h1 class="display-5 fw-bold">
+            Empowering Innovation Through Technology
+          </h1>
+          <p class="lead mb-4">
+            We help businesses solve complex problems with elegant digital
+            solutions.
+          </p>
+          <a href="#services" class="btn btn-light px-4 py-2 rounded-pill fw-semibold shadow-sm">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <main>
+  <!-- About -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5 flex-lg-row-reverse">
+        <!-- Image -->
+        <div class="col-lg-6 text-center">
+          <img src="undraw_engineering-team_13ax.svg" alt="BluWis team vision illustration"
+            class="img-fluid about-img" />
+        </div>
 
-        <!-- Hero -->
-        <header id="home" class="full-screen hero-bg text-white text-center">
-            <div class="container">
-                <!-- <img src="assets/logo.png" alt="Blue Wisdom Inc. logo" class="hero-logo mb-4" loading="lazy" > -->
-                <h1 class="display-1 fw-bold mb-1 poppins-heading">BluWis</h1>
-                <p class="lead mb-4 poppins-text">
-                    Ideate
-                    <i class="bi bi-circle-fill small-circle mx-2"></i>
-                    Innovate
-                    <i class="bi bi-circle-fill small-circle mx-2"></i>
-                    Impact
-                </p>
-                <a href="#contact" class="btn btn-cta btn-lg">Let’s Innovate </a>
-                <br><br><br>
-                <i class="bi bi-arrow-down feature-icon text-white mb-3"></i>
+        <!-- Text Content -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-4">About BluWis</h2>
+          <div>
+            <p class="lead text-muted">
+              BluWis is a forward-thinking technology services firm with SAP
+              at its foundation. We empower enterprises to transform through
+              intelligent adoption of Cloud, Data, and AI/ML solutions—crafted
+              to drive strategic business outcomes.
+            </p>
+            <p class="callout">
+              Our edge lies in harmonizing modern SAP landscapes with
+              cutting-edge technologies, enabling our clients to modernize,
+              scale, and lead in an era of constant disruption.
+            </p>
+          </div>
+
+          <!-- Vision & Mission -->
+          <div class="row g-3 mt-4">
+            <div class="col-md-6">
+              <div class="card vision-card h-100">
+                <div class="card-body">
+                  <div class="icon-circle bg-primary text-white mb-3">
+                    <i class="bi bi-eye-fill"></i>
+                  </div>
+                  <h6 class="fw-bold">Our Vision</h6>
+                  <p class="small mb-0">
+                    To be a globally recognized leader in SAP-driven
+                    transformation—renowned for innovation, reliability, and
+                    an unwavering commitment to client success.
+                  </p>
+                </div>
+              </div>
             </div>
-        </header>
+            <div class="col-md-6">
+              <div class="card vision-card h-100">
+                <div class="card-body">
+                  <div class="icon-circle bg-primary text-white mb-3">
+                    <i class="bi bi-bullseye"></i>
+                  </div>
+                  <h6 class="fw-bold">Our Mission</h6>
+                  <p class="small mb-0">
+                    Drive success through future-proof SAP adoption—delivering
+                    measurable value through cloud, data, and AI-powered
+                    innovation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- About -->
-        <section id="about" class="py-5 bg-light">
-            <div class="container">
-              <h2 class="text-center poppins-heading mb-4">About BluWis</h2>
-              <p class="text-center lead mb-5">
-                We deliver measurable business outcomes through deep SAP expertise, cloud and data innovation, 
-                and an outcome-driven model.
+  <!-- Leadership Principles -->
+  <section id="principles" class="py-5 bg-white position-relative overflow-hidden">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+          <h2 class="fw-bold display-5">Our Leadership Principles</h2>
+          <p class="lead text-muted">
+            Timeless values that guide every decision, hire, and strategy we
+            pursue.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="undraw_visionary-technology_6ouq.svg" alt="Stylized leadership illustration"
+            class="principle-hero-img" />
+        </div>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-people fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Customer Obsession</h5>
+              <p>
+                We are relentlessly driven to exceed client expectations at
+                every touchpoint.
               </p>
-              <div class="row g-4">
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm about-card p-4 text-center" data-aos="fade-up">
-                    <i class="bi bi-diagram-3 feature-icon mb-3"></i>
-                    <h5 class="fw-bold">Deep SAP Ecosystem</h5>
-                    <p>Expertise across S/4HANA, SCM, Procurement, Finance—and end-to-end process best practices.</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm about-card p-4 text-center" data-aos="fade-up" data-aos-delay="50">
-                    <i class="bi bi-people-fill feature-icon mb-3"></i>
-                    <h5 class="fw-bold">Scalable Talent</h5>
-                    <p>Certified global team of SAP professionals, ready to scale for complex, multi-region rollouts.</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm about-card p-4 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <i class="bi bi-speedometer2 feature-icon mb-3"></i>
-                    <h5 class="fw-bold">Outcome-Driven</h5>
-                    <p>Focused on cost reduction, process optimization, and delivering rapid time-to-value.</p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm about-card p-4 text-center" data-aos="fade-up" data-aos-delay="150">
-                    <i class="bi bi-lightning-charge-fill feature-icon mb-3"></i>
-                    <h5 class="fw-bold">Innovation &amp; Technology</h5>
-                    <p>Embedding AI, ML, RPA, and analytics into SAP landscapes for continuous modernization.</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
-
-          <!-- At A Glance -->
-          <section id="glance" class="py-5 bg-white">
-            <div class="container">
-              <h2 class="text-center poppins-heading mb-4"> At A Glance</h2>
-              <div class="row text-center g-4">
-                <div class="col-6 col-md-3">
-                  <h3 class="fw-bold">100+</h3>
-                  <p>Years of combined SAP experience</p>
-                </div>
-                <div class="col-6 col-md-3">
-                  <h3 class="fw-bold">Global</h3>
-                  <p>Delivery footprint across USA & India</p>
-                </div>
-                <div class="col-6 col-md-3">
-                  <h3 class="fw-bold">5</h3>
-                  <p>Core SAP modules: S/4HANA, IBP, Ariba, BDC, BTP</p>
-                </div>
-                <div class="col-6 col-md-3">
-                  <h3 class="fw-bold">Outcome Focus</h3>
-                  <p>Cost savings, process optimization, rapid time-to-value</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-shield-check fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Transparency & Integrity</h5>
+              <p>
+                We foster open communication and make ethical decisions that
+                serve the greater good.
+              </p>
             </div>
-          </section>          
-<!-- Core Expertise -->
-<section id="expertise" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center poppins-heading mb-4">Core Expertise</h2>
-      <div class="row g-4">
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100 border-0 shadow-sm p-4 text-center">
-            <i class="bi bi-gear-wide-connected feature-icon mb-3"></i>
-            <h5>Supply Chain</h5>
-            <p>End-to-end SCM with IBP, EWM & TM integration</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100 border-0 shadow-sm p-4 text-center">
-            <i class="bi bi-cash-stack feature-icon mb-3"></i>
-            <h5>Finance & Risk</h5>
-            <p>Commodity trade risk management & financial close</p>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-gem fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Commitment Over Profit</h5>
+              <p>
+                We deliver long-term value by focusing on strong
+                partnerships—not short-term wins.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100 border-0 shadow-sm p-4 text-center">
-            <i class="bi bi-box-seam feature-icon mb-3"></i>
-            <h5>Procurement</h5>
-            <p>Ariba-powered sourcing, contract & supplier management</p>
+        <div class="col-md-6 col-lg-4 offset-lg-2">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-person-plus fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Hire and Develop the Best</h5>
+              <p>
+                We cultivate a culture of excellence, learning, and
+                leadership.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100 border-0 shadow-sm p-4 text-center">
-            <i class="bi bi-cloud-upload feature-icon mb-3"></i>
-            <h5>Cloud & Data</h5>
-            <p>Migration, modernization, analytics & data-driven insights</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100 border-0 shadow-sm p-4 text-center">
-            <i class="bi bi-display feature-icon mb-3"></i>
-            <h5>User Experience</h5>
-            <p>Fiori/UI5 design, training & adoption programs</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card h-100 border-0 shadow-sm p-4 text-center">
-            <i class="bi bi-shield-lock feature-icon mb-3"></i>
-            <h5>Security & Compliance</h5>
-            <p>GRC, SoD, code reviews & continuous monitoring</p>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-lightbulb fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">
+                Encourage Curiosity, Solve Problems
+              </h5>
+              <p>
+                We empower teams to challenge the status quo and innovate with
+                impact.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-<!-- Problem Statement -->
-<section id="problems" class="py-5 bg-white">
+
+  <!-- Problem We Solve -->
+  <section id="challenges" class="bg-light py-5 position-relative overflow-hidden">
     <div class="container">
-      <h2 class="text-center poppins-heading mb-4">Challenges We Solve</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="p-4 h-100 text-center border rounded">
-            <i class="bi bi-exclamation-circle-fill display-4 text-danger mb-3"></i>
-            <h5>Fragmented Data</h5>
-            <p>Siloed systems hinder visibility and decision-making.</p>
+      <!-- Intro Row with Image on the Left -->
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 text-center mb-4 mb-lg-0">
+          <img src="undraw_problem-solving_8lg7.svg" alt="Problem solving illustration" class="principle-hero-img" />
+        </div>
+        <div class="col-lg-6 text-center text-lg-end">
+          <h2 class="fw-bold display-5">The Problem We Solve</h2>
+          <p class="lead text-muted">
+            Modern enterprises face SAP challenges that demand more than
+            cookie-cutter solutions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="row g-4 text-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body text-start">
+              <div class="challenge-badge">1</div>
+              <h6 class="fw-bold mt-3">Fragmented SAP Expertise</h6>
+              <p>
+                Enterprises struggle to find partners with deep skills across
+                S4HANA, IBP, AI/ML, and Cloud.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="p-4 h-100 text-center border rounded">
-            <i class="bi bi-speedometer2 display-4 text-primary mb-3"></i>
-            <h5>Slow Time-to-Value</h5>
-            <p>Lengthy rollouts delay ROI and business agility.</p>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body text-start">
+              <div class="challenge-badge">2</div>
+              <h6 class="fw-bold mt-3">Industry-Specific Complexity</h6>
+              <p>
+                Nuanced SAP configurations are needed for Oil & Gas, CPG, and
+                Retail—one-size doesn't fit all.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="p-4 h-100 text-center border rounded">
-            <i class="bi bi-gear-fill display-4 text-success mb-3"></i>
-            <h5>Legacy Complexity</h5>
-            <p>Custom code and outdated apps increase risk and cost.</p>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body text-start">
+              <div class="challenge-badge">3</div>
+              <h6 class="fw-bold mt-3">Barriers to New SAP Releases</h6>
+              <p>
+                Legacy systems with custom code slow innovation and disrupt
+                upgrades.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 offset-lg-2">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body text-start">
+              <div class="challenge-badge">4</div>
+              <h6 class="fw-bold mt-3">Misaligned Solutions</h6>
+              <p>
+                Disconnected offerings miss the mark on real business
+                outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body text-start">
+              <div class="challenge-badge">5</div>
+              <h6 class="fw-bold mt-3">Understanding Expectations</h6>
+              <p>
+                Businesses need a partner who aligns strategy with execution.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-    
 
-        <!-- Services -->
-        <section id="services" class="py-5 bg-light">
-            <div class="container">
-              <h2 class="text-center poppins-heading mb-5">Our Service Offerings</h2>
-              <div class="row g-4">
-          
-                <!-- Advisory & Assessment -->
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm p-4 service-card">
-                    <div class="text-center mb-4">
-                      <span class="icon-circle bg-primary text-white mb-2">
-                        <i class="bi bi-search"></i>
-                      </span>
-                      <h5>Advisory &amp; Assessment</h5>
-                    </div>
-                    <ul class="ps-3 text-start" style="margin: 15%; margin-top: 0%; margin-bottom: 5%;">
-                      <li><strong>S/4HANA Migration</strong>: Roadmap & readiness assessment</li>
-                      <li><strong>Clean Core Strategy</strong>: Custom-code remediation via BTP</li>
-                      <li><strong>App Retirement</strong>: Phased decommissioning</li>
-                      <li><strong>License Optimization</strong>: Usage audit & ROI uplift</li>
-                    </ul>
-                  </div>
-                </div>
-          
-                <!-- Implementation -->
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm p-4 service-card">
-                    <div class="text-center mb-4">
-                      <span class="icon-circle bg-primary text-white mb-2">
-                        <i class="bi bi-gear-fill"></i>
-                      </span>
-                      <h5>Implementation</h5>
-                    </div>
-                    <ul class="ps-3 text-start" style="margin: 15%; margin-top: 0%; margin-bottom: 5%;">
-                      <li><strong>Strategic Planning</strong>: Align roadmap to your goals</li>
-                      <li><strong>Clean-Core Configuration</strong>: Minimal-custom setup</li>
-                      <li><strong>Data Integrity</strong>: Governance, cleansing, migration</li>
-                      <li><strong>User Adoption</strong>: Change management & training</li>
-                      <li><strong>Hypercare Support</strong>: Post-go-live validation</li>
-                    </ul>
-                  </div>
-                </div>
-          
-                <!-- SAP Migration -->
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm p-4 service-card">
-                    <div class="text-center mb-4">
-                      <span class="icon-circle bg-primary text-white mb-2">
-                        <i class="bi bi-arrow-repeat"></i>
-                      </span>
-                      <h5>SAP Migration</h5>
-                    </div>
-                    <ul class="ps-3 text-start" style="margin: 15%; margin-top: 0%; margin-bottom: 5%;">
-                      <li><strong>Greenfield</strong>: Brand-new implementation</li>
-                      <li><strong>Brownfield</strong>: Upgrade & preserve core</li>
-                      <li><strong>Bluefield</strong>: Hybrid selective migration</li>
-                    </ul>
-                  </div>
-                </div>
-          
-                <!-- Integration & Test Automation -->
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm p-4 service-card">
-                    <div class="text-center mb-4">
-                      <span class="icon-circle bg-primary text-white mb-2">
-                        <i class="bi bi-robot"></i>
-                      </span>
-                      <h5>Integration &amp; Automation</h5>
-                    </div>
-                    <ul class="ps-3 text-start" style="margin: 15%; margin-top: 0%; margin-bottom: 5%;">
-                      <li><strong>API & Middleware</strong>: Real-time data sync</li>
-                      <li><strong>Test Automation</strong>: Regression & performance suites</li>
-                      <li><strong>Self-Healing Scripts</strong>: AI-driven resilience</li>
-                    </ul>
-                  </div>
-                </div>
-          
-                <!-- Security & Compliance -->
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm p-4 service-card">
-                    <div class="text-center mb-4">
-                      <span class="icon-circle bg-primary text-white mb-2">
-                        <i class="bi bi-shield-lock-fill"></i>
-                      </span>
-                      <h5>Security &amp; Compliance</h5>
-                    </div>
-                    <ul class="ps-3 text-start" style="margin: 15%; margin-top: 0%; margin-bottom: 5%;">
-                      <li><strong>Role & SoD Design</strong>: Governance & controls</li>
-                      <li><strong>Vulnerability Scanning</strong>: Onapsis & CVA reviews</li>
-                      <li><strong>24/7 Monitoring</strong>: SIEM-integrated alerts</li>
-                      <li><strong>Regulatory Support</strong>: SOX, GDPR, ISO 27001</li>
-                    </ul>
-                  </div>
-                </div>
-          
-                <!-- Business Continuity -->
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm p-4 service-card">
-                    <div class="text-center mb-4">
-                      <span class="icon-circle bg-primary text-white mb-2">
-                        <i class="bi bi-heart-pulse"></i>
-                      </span>
-                      <h5>Business Continuity</h5>
-                    </div>
-                    <ul class="ps-3 text-start" style="margin: 15%; margin-top: 0%; margin-bottom: 5%;">
-                      <li><strong>Custom SLAs</strong>: Aligned to critical processes</li>
-                      <li><strong>High-Availability</strong>: Resilient architectures</li>
-                      <li><strong>Proactive Monitoring</strong>: Health checks & alerts</li>
-                      <li><strong>Disaster Recovery</strong>: Plans & drills</li>
-                    </ul>
-                  </div>
-                </div>
-          
-                <!-- Digital & Cloud -->
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm p-4 service-card">
-                    <div class="text-center mb-4">
-                      <span class="icon-circle bg-primary text-white mb-2">
-                        <i class="bi bi-cloud-upload"></i>
-                      </span>
-                      <h5>Digital &amp; Cloud</h5>
-                    </div>
-                    <ul class="ps-3 text-start" style="margin: 15%; margin-top: 0%; margin-bottom: 5%;">
-                      <li><strong>Cloud Migration</strong>: Zero-downtime AWS/Azure/GCP</li>
-                      <li><strong>Hybrid Integration</strong>: Secure API/middleware</li>
-                      <li><strong>Embedded Analytics</strong>: Real-time BI & workflows</li>
-                      <li><strong>Managed Services</strong>: Optimization & cost control</li>
-                    </ul>
-                  </div>
-                </div>
-          
-                <!-- SAP Activate Methodology -->
-                <div class="col-sm-12 col-md-6">
-                  <div class="card h-100 border-0 shadow-sm p-4 service-card">
-                    <div class="text-center mb-4">
-                      <span class="icon-circle bg-primary text-white mb-2">
-                        <i class="bi bi-journal-code"></i>
-                      </span>
-                      <h5>SAP Activate Methodology</h5>
-                    </div>
-                    <ul class="ps-3 text-start" style="margin: 15%; margin-top: 0%; margin-bottom: 5%;">
-                      <li><strong>Ready-to-Run</strong>: Preconfigured best practices</li>
-                      <li><strong>Guided Configuration</strong>: Step-by-step setup</li>
-                      <li><strong>Agile Delivery</strong>: Iterative sprints & feedback</li>
-                      <li><strong>Clean Core</strong>: Minimal custom code, max standard</li>
-                    </ul>
-                  </div>
-                </div>
-          
+  <div class="hero-gradient mt-5 text-center">
+    <!-- <h4 class="mb-3"><i class="bi bi-stars text-white me-2"></i>Our Solution</h4> -->
+    <p class="lead fw-medium mb-4">
+      BluWis brings together core SAP expertise, clean core strategy, and
+      next-gen innovation under one roof—
+      <strong>bridging the gap between complexity and clarity, technology and
+        transformation.</strong>
+    </p>
+    <a href="#contact" class="btn btn-light rounded-pill px-4 py-2">Explore Our Services</a>
+  </div>
+
+  <!-- What sets up apart -->
+  <section id="what-sets-us-apart" class="py-5 bg-light position-relative overflow-hidden">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+          <h2 class="fw-bold display-5">What Sets Us Apart</h2>
+          <p class="lead text-muted">
+            We deliver business outcomes through SAP expertise—leveraging
+            cloud, data, AI, and ML to drive innovation and client success.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="undraw_product-iteration_r2wg.svg" alt="Illustration representing product innovation"
+            class="principle-hero-img" />
+        </div>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-diagram-3-fill fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Deep SAP Ecosystem Expertise</h5>
+              <p>
+                Proven capabilities across SAP modules like S4HANA, SCM,
+                Procurement & Finance. Strong command of business processes &
+                best practices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-people-fill fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Certified & Scalable Talent Pool</h5>
+              <p>
+                Large team of SAP-certified experts with cross-functional,
+                multi-industry experience. Rapid scalability for complex
+                global rollouts.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-bullseye fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Outcome-Driven Delivery Model</h5>
+              <p>
+                Focused on business value—not just tech. Results include cost
+                savings, faster time to value, and optimized processes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-cpu-fill fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">
+                Innovation & Technology Integration
+              </h5>
+              <p>
+                AI, ML, RPA, and analytics fully integrated into SAP
+                landscapes. Expertise in SAP BTP and cloud modernization.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-award-fill fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Leadership with Proven Impact</h5>
+              <p>
+                100+ years combined experience across SAP, IBM, Accenture,
+                AWS. Strong record of delivering measurable business outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-puzzle-fill fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Designed for Impact</h5>
+              <p>
+                Every BluWis engagement aligns SAP technology with your
+                business goals—ensuring strategic success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced CTA Section -->
+  <div class="cta-section mt-5 text-white" style="background: linear-gradient(to right, #2f75ff, #063ec0)">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h4 class="mb-3">
+          <i class="bi bi-rocket-takeoff-fill me-2"></i>AI Driven SAP-Powered
+          Impact
+        </h4>
+        <p class="lead mb-1">
+          Turn SAP investments into measurable outcomes through deep
+          expertise, innovation, and execution.
+        </p>
+        <a href="#contact" class="btn btn-light px-4 py-2 mt-3 rounded-pill fw-semibold">Contact Us</a>
+        <!-- <p>Whether it’s Clean Core migration, AI integration, or optimization—we help you lead with confidence.</p> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Cards with Dropdowns -->
+  <section id="services" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Our Services</h2>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="text-center">
+              <img src="undraw_analyze_0hyg.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#advisoryCard">
+            </div>
+            <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#advisoryCard">
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-lightning-charge-fill me-2"></i> Advisory &
+                  Assessment Services</span>
+                <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
-          </section>          
-          
-
-        <!-- Footprint -->
-        <section id="footprint" class="py-5 bg-white">
-            <div class="container text-center">
-                <h2 class="fw-bold mb-5">SAP Solution Footprint</h2>
-                <div class="sap-grid">
-                    <figure class="sap-box" data-aos="zoom-in"><img src="assets/icons/s4hana.jpg" alt="S/4HANA"
-                            loading="lazy"></figure>
-                    <figure class="sap-box" data-aos="zoom-in" data-aos-delay="50"><img src="assets/icons/ibp.png"
-                            alt="IBP" loading="lazy"></figure>
-                    <figure class="sap-box" data-aos="zoom-in" data-aos-delay="100"><img src="assets/icons/ariba.png"
-                            alt="Ariba" loading="lazy"></figure>
-                    <figure class="sap-box" data-aos="zoom-in" data-aos-delay="200"><img src="assets/icons/bdc.png"
-                            alt="BDC" loading="lazy"></figure>
-                    <figure class="sap-box" data-aos="zoom-in" data-aos-delay="150"><img src="assets/icons/btp.png"
-                            alt="BTP" loading="lazy"></figure>
+            <div id="advisoryCard" class="collapse">
+              <div class="card-body">
+                <p>
+                  Navigate SAP transformation with clarity, confidence, and measurable value. Our offerings help future-proof your SAP environments and align technology with business goals.
+                </p>
+                <ul>
+                  <li>
+                    <strong>S4HANA Migration Strategy:</strong> Transition
+                    confidently with minimal disruption.
+                  </li>
+                  <li>
+                    <strong>Clean Core Strategy:</strong> Evaluate
+                    customizations using SAP BTP.
+                  </li>
+                  <li>
+                    <strong>Application Retirement Strategy:</strong> Phased,
+                    low-risk decommissioning.
+                  </li>
+                  <li>
+                    <strong>SAP License Optimization:</strong> Identify
+                    compliance gaps and optimize spend.
+                  </li>
+                </ul>
+                <div class="callout">
+                  <strong>Why It Matters:</strong> Uncover inefficiencies and
+                  reduce risks.
                 </div>
+                <a href="#contact" class="btn btn-dark rounded-pill mt-3"><i class="bi bi-calendar2-check-fill me-1"></i> Book a
+                  Discovery Call</a>
+              </div>
             </div>
-        </section>
-
-
-        <!-- Principles -->
-        <section id="principles" class="py-5 bg-white">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-5">Leadership Principles</h2>
-                <div class="row g-4 justify-content-center">
-
-                    <div class="col-md-4">
-                        <div class="card principle-card h-100 p-4 text-center" data-aos="fade-up">
-                            <i class="bi bi-people-fill display-5 text-primary mb-3"></i>
-                            <h5 class="fw-bold">Hire &amp; Develop the Best</h5>
-                            <p>Invest in top talent and their continuous growth.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card principle-card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="50">
-                            <i class="bi bi-lightbulb-fill display-5 text-warning mb-3"></i>
-                            <h5 class="fw-bold">Encourage Curiosity</h5>
-                            <p>Embrace challenges as opportunities for innovation.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card principle-card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="100">
-                            <i class="bi bi-heart-fill display-5 text-danger mb-3"></i>
-                            <h5 class="fw-bold">Customer Obsession</h5>
-                            <p>Relentlessly exceed client expectations.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card principle-card h-100 p-4 text-center" data-aos="fade-up">
-                            <i class="bi bi-shield-check display-5 text-success mb-3"></i>
-                            <h5 class="fw-bold">Transparency &amp; Integrity</h5>
-                            <p>Foster open communication and ethical decisions.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card principle-card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="50">
-                            <!-- <i class="bi bi-coin display-5 text-warning mb-3"></i> -->
-                            <i class="bi bi-people-fill display-5 mb-3"></i>
-                            <h5 class="fw-bold">Commitment Over Profit</h5>
-                            <p>Build trust and long-term partnerships first.</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="py-5 bg-black text-white">
-            <div class="container">
-                <div class="row align-items-center">
-
-                    <!-- Let’s Talk -->
-                    <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-start">
-                        <h2 class="fw-bold mb-3">Let’s Talk</h2>
-                        <address class="mb-0">
-                            <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>sales@bluwis.com</p>
-                        </address>
-                    </div>
-
-                    <!-- Our Locations -->
-                    <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-start">
-                        <h2 class="fw-bold mb-3">Our Locations</h2>
-                        <address class="mb-0">
-                            <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Dallas, USA</p>
-                            <p class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Bangalore, India</p>
-                        </address>
-                    </div>
-
-                    <!-- Logo -->
-                    <div class="col-12 col-md-4 text-center text-md-end">
-                        <img src="assets/logo.png" alt="Blue Wisdom Logo" class="img-fluid"
-                            style="max-width: 500px; margin: 0; padding: 0;">
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="py-4 bg-black text-center text-white">
-        <div class="container">
-            <p class="mb-1">&copy; 2025 Blue Wisdom Inc. All rights reserved.</p>
-            <small>Driving forward-thinking solutions for a digital world.</small>
+          </div>
         </div>
-    </footer>
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="text-center" data-bs-toggle="collapse"
+              data-bs-target="#implementationCard">
+              <img src="undraw_resume-folder_hf4p.svg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
+              data-bs-target="#implementationCard">
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-tools me-2"></i> Implementation
+                  Services</span>
+                <i class="bi bi-chevron-down toggle-icon"></i>
+              </div>
+            </div>
+            <div id="implementationCard" class="collapse">
+              <div class="card-body">
+                <p>
+                  Our approach blends SAP expertise with structured methodology for scalable, outcome-driven execution.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Comprehensive Planning:</strong> Roadmaps aligned
+                    to goals.
+                  </li>
+                  <li>
+                    <strong>Configuration:</strong> Tailored SAP
+                    functionality.
+                  </li>
+                  <li>
+                    <strong>Data Integrity Assurance:</strong> Trustworthy
+                    data practices.
+                  </li>
+                  <li>
+                    <strong>Business Process Optimization:</strong> Improve
+                    efficiency and outcomes.
+                  </li>
+                  <li>
+                    <strong>Effective User Training:</strong> Empower users
+                    through training.
+                  </li>
+                  <li>
+                    <strong>Facilitating User Adoption:</strong> Smooth change
+                    management.
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-dark rounded-pill mt-3"><i class="bi bi-clipboard-check me-1"></i> Schedule a
+                  Consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="text-center">
+              <img src="undraw_files-uploading_qf8u.svg" class="card-img-top migration-card" alt="..." data-bs-toggle="collapse" data-bs-target="#migrationCard">
+            </div>
+            <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
+              data-bs-target="#migrationCard">
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-box-arrow-up-right me-2"></i>S4HANA
+                  Migration Services</span>
+                <i class="bi bi-chevron-down toggle-icon"></i>
+              </div>
+            </div>
+            <div id="migrationCard" class="collapse">
+              <div class="card-body">
+                <p>
+                  Whether Greenfield, Brownfield, or Bluefield—BluWis aligns your migration path with business strategy.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Greenfield:</strong> Start fresh with no legacy
+                    constraints.
+                  </li>
+                  <li>
+                    <strong>Brownfield:</strong> Upgrade while preserving
+                    historical data.
+                  </li>
+                  <li>
+                    <strong>Bluefield:</strong> Hybrid migrations with
+                    continuity.
+                  </li>
+                </ul>
+                <div class="callout">
+                  <strong>Why BluWis:</strong> Clean core strategy and minimal
+                  downtime.
+                </div>
+                <a href="#contact" class="btn btn-dark rounded-pill mt-3"><i class="bi bi-diagram-3-fill me-1"></i> Schedule a
+                  Migration Workshop</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" defer
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
-    <script src="js/script.js" defer></script>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="text-center">
+              <img src="undraw_server-status_f685.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#integrationCard">
+            </div>
+            <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
+              data-bs-target="#integrationCard">
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-plug me-2"></i> Integration Services</span>
+                <i class="bi bi-chevron-down toggle-icon"></i>
+              </div>
+            </div>
+            <div id="integrationCard" class="collapse">
+              <div class="card-body">
+                <p>Seamlessly connect SAP with external systems to ensure secure and scalable data flow.</p>
+                <ul>
+                  <li>
+                    <strong>System Integration:</strong> Unified environments.
+                  </li>
+                  <li>
+                    <strong>API Management:</strong> Real-time data pipelines.
+                  </li>
+                  <li>
+                    <strong>Middleware Solutions:</strong> SAP BTP-powered
+                    interoperability.
+                  </li>
+                  <li>
+                    <strong>Custom Development:</strong> Tailored
+                    integrations.
+                  </li>
+                  <li>
+                    <strong>Data Synchronization:</strong> Real-time updates
+                    across platforms.
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-dark rounded-pill mt-3"><i class="bi bi-link-45deg me-1"></i> Talk to an
+                  Integration Expert</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#securityCard">
+              <div class="text-center">
+                <img src="undraw_security-on_btwg.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#securityCard">
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-shield-lock-fill me-2"></i> SAP Test
+                  Automation & Security</span>
+                <i class="bi bi-chevron-down toggle-icon"></i>
+              </div>
+            </div>
+            <div id="securityCard" class="collapse">
+              <div class="card-body">
+                <p>
+                  Ensure your SAP landscape is reliable, secure, and compliant—powered by intelligent automation.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Test Automation:</strong> Tricentis, UFT,
+                    Worksoft-based testing.
+                  </li>
+                  <li>
+                    <strong>Security Services:</strong> Role-based access,
+                    scans, threat monitoring.
+                  </li>
+                  <li>
+                    <strong>Compliance:</strong> GDPR, SOX, ISO 27001 with
+                    proactive controls.
+                  </li>
+                </ul>
+                <div class="callout">
+                  <strong>Why BluWis:</strong> Predictive SAP security
+                  coverage.
+                </div>
+                <a href="#contact" class="btn btn-dark rounded-pill mt-3"><i class="bi bi-shield-check me-1"></i> Talk to a SAP
+                  Security Expert</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="text-center">
+              <img src="construction-site-5.svg" class="card-img-top continuity-card" alt="..." data-bs-toggle="collapse" data-bs-target="#continuityCard">
+            </div>
+            <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
+              data-bs-target="#continuityCard">
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-life-preserver me-2"></i> Business
+                  Continuity Support</span>
+                <i class="bi bi-chevron-down toggle-icon"></i>
+              </div>
+            </div>
+            <div id="continuityCard" class="collapse">
+              <div class="card-body">
+                <p>Minimize downtime and maximize resilience with proactive SAP support strategies.</p>
+                <ul>
+                  <li>
+                    <strong>Proactive Monitoring:</strong> 24/7 alerts before
+                    disruptions.
+                  </li>
+                  <li>
+                    <strong>Operational Resilience:</strong> High-availability
+                    infrastructure.
+                  </li>
+                  <li>
+                    <strong>Outcome SLAs:</strong> Tied to business results.
+                  </li>
+                  <li>
+                    <strong>Disaster Recovery:</strong> Tested plans for rapid
+                    restoration.
+                  </li>
+                </ul>
+                <div class="callout">
+                  <strong>Why It Matters:</strong> Uptime and trust.
+                </div>
+                <a href="#contact" class="btn btn-dark rounded-pill mt-3"><i class="bi bi-person-lines-fill me-1"></i> Let’s Talk
+                  Resilience</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#digitalCard">
+              <div class="text-center">
+                <img src="undraw_server_9eix.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#digitalCard">
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-cloud-upload-fill me-2"></i> Digital &
+                  Cloud Services</span>
+                <i class="bi bi-chevron-down toggle-icon"></i>
+              </div>
+            </div>
+            <div id="digitalCard" class="collapse">
+              <div class="card-body">
+                <p>Modernize SAP with secure cloud solutions, real-time insights, and automation for agile business operations.</p>
+                <ul>
+                  <li>
+                    <strong>Cloud Migration:</strong> Move SAP to the cloud
+                    with ease.
+                  </li>
+                  <li>
+                    <strong>Cloud Integration:</strong> API-driven
+                    connectivity.
+                  </li>
+                  <li>
+                    <strong>Digital Transformation:</strong> Automate
+                    workflows.
+                  </li>
+                  <li>
+                    <strong>Data Analytics:</strong> Real-time insights with
+                    SAP BTP.
+                  </li>
+                  <li>
+                    <strong>Managed Cloud Services:</strong> 24/7 support and
+                    monitoring.
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-dark rounded-pill mt-3"><i class="bi bi-lightbulb-fill me-1"></i> Schedule a
+                  Digital Strategy Session</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="hero-gradient text-white text-start py-5">
+    <div class="row container">
+      <div class="container col-lg-9 p-3 order-2">
+        <h4 class="fw-bold">Let’s Drive SAP-Powered Impact</h4>
+        <p>
+          Turn your SAP investments into measurable outcomes—through
+          expertise, innovation, and commitment.
+        </p>
+        <p class="fw-semibold">
+          <i class="bi bi-envelope text-white me-1"></i> sales@bluwis.com
+        </p>
+        <!-- <p class="fw-bold">Our Locations</p> -->
+        <p class="fw-semibold">
+          <i class="bi bi-geo-alt-fill me-1"></i> Dallas, USA
+        </p>
+        <p class="fw-semibold">
+          <i class="bi bi-geo-alt-fill me-1"></i> Banglore, India
+        </p>
+        <a href="#services" class="btn btn-light px-4 py-2 mt-3 rounded-pill fw-semibold">Explore Our Services</a>
+      </div>
+      <div class="container col-lg-3 text-end order-1 align-middle">
+        <img src="calling-94.svg" alt="Illustration representing product innovation" class="principle-hero-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 BluWis. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 
 </html>
