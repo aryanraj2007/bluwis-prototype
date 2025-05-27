@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BluWis</title>
-  <link rel="icon" type="image/x-icon" href="brain-logo.png" />
+  <link rel="icon" type="image/x-icon" href="assets/brand/brain-logo.png" />
 
   <!-- Google Fonts: Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -23,59 +23,99 @@
 </head>
 
 <body>
+  <!--  style="background: linear-gradient(to right, #2f75ff, #063ec0)" -->
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #2f75ff, #063ec0)"
-    data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg"
+    data-bs-theme="light">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="bluwis-logo.png" alt="BluWis logo" width="202.5" height="45" />
+        <img src="assets/brand/bluwis-logo-2.png" alt="BluWis logo" width="202.5" height="45" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end text-end" id="navbarNav">
         <ul class="navbar-nav fw-semibold">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#about">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#principles">Principles</a>
+            <a class="nav-link" href="#principles">Principles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#challenges">Challenges</a>
+            <a class="nav-link" href="#challenges">Why Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#services">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero-image-only-section d-flex align-items-center text-white text-center">
-    <div class="container py-5">
-      <div class="row align-items-center justify-content-center text-center">
-        <div class="col-lg-3 text-lg-end text-md-center text-sm-center hero-img-box">
-          <img src="coding-28.svg" alt="Abstract representation of algorithm execution"
-            class="img-fluid hero-illustration-only mb-4" />
-        </div>
-        <div class="col-lg-5 text-lg-start text-md-center">
-          <h1 class="display-5 fw-bold">
-            Empowering Innovation Through Technology
-          </h1>
-          <p class="lead mb-4">
-            We help businesses solve complex problems with elegant digital
-            solutions.
-          </p>
-          <a href="#services" class="btn btn-light px-4 py-2 rounded-pill fw-semibold shadow-sm">Explore Services</a>
+
+<!-- Hero Carousel -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-inner">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="hero-carousel-slide text-center" style="background-image: url('assets/hero/hero2.jpg');">
+        <div class="text-white container text-center hero-content">
+          <div class="container text-start">
+            <h1 class="display-5 fw-bold">Empowering Innovation</h1>
+            <p class="lead">We help businesses solve complex problems with elegant digital solutions.</p>
+            <a href="#services" class="btn btn-light px-4 py-2 rounded-pill fw-semibold">Explore Services</a>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="hero-carousel-slide" style="background-image: url('assets/hero/hero1.jpg');">
+        <div class="text-white container text-center hero-content">
+          <div class="container text-start">
+            <h1 class="display-5 fw-bold">Transform with SAP</h1>
+            <p class="lead">Align your business with future-proof strategies and intelligent technologies.</p>
+            <a href="#services" class="btn btn-light px-4 py-2 rounded-pill fw-semibold">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="hero-carousel-slide" style="background-image: url('assets/hero/hero3.jpg');">
+        <div class="text-white container text-center hero-content">
+            <div class="container text-start">
+              <h1 class="display-5 fw-bold">Scale with Confidence</h1>
+              <p class="lead">We bridge complexity and clarity to deliver measurable outcomes.</p>
+              <a href="#services" class="btn btn-light px-4 py-2 rounded-pill fw-semibold">Explore Services</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button> -->
+</div>
+
+
 
   <!-- About -->
   <section id="about" class="py-5 bg-light">
@@ -83,8 +123,9 @@
       <div class="row align-items-center g-5 flex-lg-row-reverse">
         <!-- Image -->
         <div class="col-lg-6 text-center">
-          <img src="undraw_engineering-team_13ax.svg" alt="BluWis team vision illustration"
-            class="img-fluid about-img" />
+          <!-- <img src="assets/stock/Professional_Woman_Portrait-removebg-preview.png" alt="BluWis team vision illustration"
+            class="img-fluid about-image" /> -->
+          <img src="assets/stock/Digital Global Network Map.jpeg" class="about-image img-fluid">
         </div>
 
         <!-- Text Content -->
@@ -97,11 +138,13 @@
               intelligent adoption of Cloud, Data, and AI/ML solutions—crafted
               to drive strategic business outcomes.
             </p>
-            <p class="callout">
-              Our edge lies in harmonizing modern SAP landscapes with
+            <div class="callout">
+              <p>
+              <strong>Our edge</strong> lies in harmonizing modern SAP landscapes with
               cutting-edge technologies, enabling our clients to modernize,
               scale, and lead in an era of constant disruption.
-            </p>
+              </p>
+            </div>
           </div>
 
           <!-- Vision & Mission -->
@@ -143,19 +186,20 @@
   </section>
 
   <!-- Leadership Principles -->
-  <section id="principles" class="py-5 bg-white position-relative overflow-hidden">
+  <section id="principles" class="py-5 bg-light position-relative overflow-hidden">
     <div class="container">
-      <div class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+      <div class="row align-items-center mb-5 text-lg-start">
+        <!-- <div class="col-lg-3 col-md-0 col-sm-0"></div> -->
+        <div class="col-lg-4 text-center order-1 text-lg-start">
+          <img src="assets/stock/Professional Handshake in Corridor.jpeg" alt="Stylized leadership illustration"
+            class="leadership-img" style="margin-bottom: 25px;"/>
+        </div>
+        <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0 order-2">
           <h2 class="fw-bold display-5">Our Leadership Principles</h2>
           <p class="lead text-muted">
             Timeless values that guide every decision, hire, and strategy we
             pursue.
           </p>
-        </div>
-        <div class="col-lg-6 text-center">
-          <img src="undraw_visionary-technology_6ouq.svg" alt="Stylized leadership illustration"
-            class="principle-hero-img" />
         </div>
       </div>
 
@@ -231,10 +275,10 @@
     <div class="container">
       <!-- Intro Row with Image on the Left -->
       <div class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center mb-4 mb-lg-0">
-          <img src="undraw_problem-solving_8lg7.svg" alt="Problem solving illustration" class="principle-hero-img" />
+        <div class="col-lg-2 text-center mb-4 mb-lg-0 text-lg-start">
+          <img src="assets/stock/Binary Code Wave.jpeg" alt="Problem solving illustration" class="challenge-img" />
         </div>
-        <div class="col-lg-6 text-center text-lg-end">
+        <div class="col-lg-10 text-center text-lg-start">
           <h2 class="fw-bold display-5">The Problem We Solve</h2>
           <p class="lead text-muted">
             Modern enterprises face SAP challenges that demand more than
@@ -327,20 +371,33 @@
   <section id="what-sets-us-apart" class="py-5 bg-light position-relative overflow-hidden">
     <div class="container">
       <div class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+        <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0">
           <h2 class="fw-bold display-5">What Sets Us Apart</h2>
           <p class="lead text-muted">
             We deliver business outcomes through SAP expertise—leveraging
             cloud, data, AI, and ML to drive innovation and client success.
           </p>
         </div>
-        <div class="col-lg-6 text-center">
-          <img src="undraw_product-iteration_r2wg.svg" alt="Illustration representing product innovation"
-            class="principle-hero-img" />
+        <div class="col-lg-4 text-center">
+          <img src="assets/stock/Office Meeting Scene.jpeg" class="about-image img-fluid" />
         </div>
       </div>
 
       <div class="row g-4 text-center">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm principle-card">
+            <div class="card-body">
+              <i class="bi bi-puzzle-fill fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-3">Designed for Impact</h5>
+              <p>
+                Every BluWis engagement aligns SAP technology with your
+                business goals—ensuring strategic success.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm principle-card">
             <div class="card-body">
@@ -409,19 +466,6 @@
             </div>
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm principle-card">
-            <div class="card-body">
-              <i class="bi bi-puzzle-fill fs-2 text-primary"></i>
-              <h5 class="fw-bold mt-3">Designed for Impact</h5>
-              <p>
-                Every BluWis engagement aligns SAP technology with your
-                business goals—ensuring strategic success.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -447,18 +491,29 @@
   <!-- Services Cards with Dropdowns -->
   <section id="services" class="py-5 bg-white">
     <div class="container">
-      <h2 class="text-center fw-bold mb-5">Our Services</h2>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0 text-lg-start">
+          <img src="assets/stock/Business Meeting in Modern Conference Room.jpeg" alt="Problem solving illustration" class="challenge-img" />
+        </div>
+        <div class="col-lg-8 text-center text-lg-start">
+          <h2 class="fw-bold display-5">Our Services</h2>
+          <p class="lead text-muted">
+            We empower enterprises with end-to-end SAP solutions, driving innovation, agility, and measurable business outcome
+          </p>
+        </div>
+      </div>
+
 
       <div class="row">
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center">
-              <img src="undraw_analyze_0hyg.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#advisoryCard">
+              <i class="bi bi-lightning-charge-fill fs-1 text-primary"></i>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#advisoryCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-lightning-charge-fill me-2"></i> Advisory &
-                  Assessment Services</span>
+                <span class="service-title"><strong>Advisory &
+                  Assessment Services</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -496,16 +551,18 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center" data-bs-toggle="collapse"
               data-bs-target="#implementationCard">
-              <img src="undraw_resume-folder_hf4p.svg" class="card-img-top" alt="...">
+              <div class="text-center">
+                <i class="bi bi-tools fs-1 text-primary"></i>
+              </div>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
               data-bs-target="#implementationCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-tools me-2"></i> Implementation
-                  Services</span>
+                <span class="service-title"> <strong>Implementation
+                  Services </strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -547,15 +604,15 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center">
-              <img src="undraw_files-uploading_qf8u.svg" class="card-img-top migration-card" alt="..." data-bs-toggle="collapse" data-bs-target="#migrationCard">
+              <i class="bi bi-box-arrow-up-right fs-1 text-primary" data-bs-toggle="collapse" data-bs-target="#migrationCard"></i>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
               data-bs-target="#migrationCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-box-arrow-up-right me-2"></i>S4HANA
-                  Migration Services</span>
+                <span class="service-title"> <strong>S4HANA
+                  Migration Services</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -592,14 +649,14 @@
 
       <div class="row">
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center">
-              <img src="undraw_server-status_f685.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#integrationCard">
+              <i class="bi bi-plug fs-1 text-primary" alt="..." data-bs-toggle="collapse" data-bs-target="#integrationCard"></i>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
               data-bs-target="#integrationCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-plug me-2"></i> Integration Services</span>
+                <span class="service-title"> <strong>Integration Services</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -633,14 +690,14 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#securityCard">
               <div class="text-center">
-                <img src="undraw_security-on_btwg.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#securityCard">
+                <i class="bi bi-shield-lock-fill fs-1 text-primary" data-bs-toggle="collapse" data-bs-target="#securityCard"></i>
               </div>
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-shield-lock-fill me-2"></i> SAP Test
-                  Automation & Security</span>
+                <span class="service-title"><strong>SAP Test
+                  Automation & Security </strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -674,15 +731,15 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="text-center">
-              <img src="construction-site-5.svg" class="card-img-top continuity-card" alt="..." data-bs-toggle="collapse" data-bs-target="#continuityCard">
+              <i class="bi bi-life-preserver fs-1 text-primary" alt="..." data-bs-toggle="collapse" data-bs-target="#continuityCard"></i>
             </div>
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse"
               data-bs-target="#continuityCard">
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-life-preserver me-2"></i> Business
-                  Continuity Support</span>
+                <span class="service-title"> <strong>Business
+                  Continuity Support</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -719,14 +776,14 @@
 
       <div class="row">
         <div class="col-lg-4">
-          <div class="card mb-3">
+          <div class="card mb-3 service-card">
             <div class="card-header bg-white clickable-header" data-bs-toggle="collapse" data-bs-target="#digitalCard">
               <div class="text-center">
-                <img src="undraw_server_9eix.svg" class="card-img-top" alt="..." data-bs-toggle="collapse" data-bs-target="#digitalCard">
+                <i class="bi bi-cloud-upload-fill fs-1 text-primary" alt="..." data-bs-toggle="collapse" data-bs-target="#digitalCard"></i>
               </div>
               <div class="d-flex justify-content-between align-items-center">
-                <span><i class="bi bi-cloud-upload-fill me-2"></i> Digital &
-                  Cloud Services</span>
+                <span class="service-title"><strong>Digital &
+                  Cloud Services</strong></span>
                 <i class="bi bi-chevron-down toggle-icon"></i>
               </div>
             </div>
@@ -768,7 +825,7 @@
   <!-- Contact -->
   <section id="contact" class="hero-gradient text-white text-start py-5">
     <div class="row container">
-      <div class="container col-lg-9 p-3 order-2">
+      <div class="container col-lg-8 p-3 order-2">
         <h4 class="fw-bold">Let’s Drive SAP-Powered Impact</h4>
         <p>
           Turn your SAP investments into measurable outcomes—through
@@ -786,11 +843,17 @@
         </p>
         <a href="#services" class="btn btn-light px-4 py-2 mt-3 rounded-pill fw-semibold">Explore Our Services</a>
       </div>
-      <div class="container col-lg-3 text-end order-1 align-middle">
-        <img src="calling-94.svg" alt="Illustration representing product innovation" class="principle-hero-img" />
+      <div class="container col-lg-4 text-end order-1 align-middle text-center">
+        <img src="assets/stock/Business Handshake Scene.jpeg" alt="Illustration representing contact" class="contact-img" />
       </div>
     </div>
   </section>
+
+
+  <!-- Scroll to Top Button -->
+<a href="#" class="btn btn-primary btn-lg rounded-circle scroll-to-top" aria-label="Scroll to top">
+  <i class="bi bi-arrow-up"></i>
+</a>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
@@ -800,6 +863,19 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.querySelector('.scroll-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>
