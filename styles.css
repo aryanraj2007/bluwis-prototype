@@ -585,3 +585,111 @@ footer {
 .hero-carousel-slide::before {
   background: rgba(0, 0, 0, 0.45); /* subtle dark overlay */
 }
+
+/* Industries Section */
+
+.horizontal-accordion {
+  display: flex;
+  height: 300px;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.accordion-panel {
+  position: relative;
+  flex: 1;
+  transition: flex 0.4s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.accordion-panel:hover {
+  flex: 3;
+}
+
+.accordion-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.panel-content {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+}
+
+.panel-content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Backgrounds */
+/* Specific Backgrounds */
+.oil-gas {
+  background-image: url('assets/stock/oil&gas.jpg');
+}
+
+.cpg-retail {
+  background-image: url('assets/stock/cpg-retail.jpg');
+}
+
+.manufacturing {
+  background-image: url('assets/stock/manufacturing.jpg');
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .horizontal-accordion {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .accordion-panel {
+    flex: none;
+    height: 200px;
+  }
+
+  .accordion-panel:hover {
+    flex: none;
+  }
+}
+
+/* Resources Section */
+.resource-module {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-module:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+}
+
+.resource-header {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.resource-module .card-body {
+  padding: 1.5rem;
+}
+
+.resource-module h5 {
+  font-size: 1.25rem;
+}
+
+.resource-module i {
+  opacity: 0.85;
+}
