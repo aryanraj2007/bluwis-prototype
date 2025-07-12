@@ -186,12 +186,16 @@ footer {
 /* Callout & Highlights */
 .callout {
   /* background-color: #f1f5ff; */
-  background-color: #006db0;
+  background-color: #063EC0;
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 8px;
   margin-top: 1rem;
   font-weight: 500;
+}
+
+.callout-subhead{
+  font-size: 1.25rem;
 }
 
 .solution-highlight {
@@ -232,6 +236,12 @@ footer {
   max-height: 300px;
   object-fit: cover;
   /* border-radius: 50%; */
+  /* filter: saturate(0); */
+}
+
+.services-img{
+  max-height: 400px;
+  object-fit: cover;
   /* filter: saturate(0); */
 }
 
@@ -574,6 +584,7 @@ footer {
 .about-image,
 .leadership-img,
 .challenge-img,
+.services-img,
 .contact-img {
   max-width: 100%;
   height: auto;
@@ -640,7 +651,7 @@ footer {
 }
 
 .cpg-retail {
-  background-image: url('assets/stock/cpg-retail.jpg');
+  background-image: url('assets/stock/cpg-new.jpg');
 }
 
 .manufacturing {
@@ -692,4 +703,52 @@ footer {
 
 .resource-module i {
   opacity: 0.85;
+}
+
+.card-bio {
+  z-index: 10;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* ---- Leadership Team Styles ---- */
+.leader-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.leader-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.leader-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.leader-role {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.leader-bio-button {
+  background-color: #ffffff;
+  border: 2px solid #063ec0;
+  color: #063ec0;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.leader-bio-button:hover {
+  background-color: #063ec0;
+  color: #ffffff;
+}
+
+.leader-bio {
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.5;
 }
